@@ -1,0 +1,173 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.nav
+{
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    border: 2px solid black;
+    text-align: center;
+    background-color:black;
+    left: -400px;
+    transition: all 0.5s ease;
+}
+
+#img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid black;
+    margin-left:22%;
+    margin-top: 30px;
+}
+/* #backgroundImg
+{
+    width: 100%;
+    height: 100vh;
+} */
+
+#profileImg
+{
+    width:150px; 
+    height: 150px;
+    margin-top: 20px;
+    border: 8px solid rgb(18, 18, 88);
+    border-radius:50%;
+    
+}
+#profileImg:hover
+{
+    border: 8px solid lightblue;
+    transition:1s;
+    opacity: 0.8;
+}
+
+#socialAcc
+{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.nav ul
+{
+    margin-top: 35px;
+}
+.nav ul li
+{
+    
+    align-items: left;
+    /* display: flex;
+    justify-content: left; */
+}
+.nav ul a
+{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 51px;
+    box-sizing: border-box;
+    border-top: 3px solid rgba(255,255,255,0.2);
+    transition: 0.5s;
+    /* border-bottom: 3px solid rgba(255,255,255,0.1); */
+}
+ul li:hover a
+{
+    color:rgb(26, 77, 179);
+    padding-left: 20px;
+    
+}
+.nav ul a i
+{
+    margin-right: 10px;
+}
+h1
+{
+    color: aliceblue;
+    user-select: none;
+    line-height: 100px;
+}
+h1:hover
+{
+    
+    transition: 1s;
+    text-shadow:4px 4px rgb(26, 77, 179);
+}
+.icons
+{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.icons:hover
+{
+    color:rgb(26, 77, 179);
+    
+}
+
+ .accIcn
+{
+    font-size: 25px;
+    color:white;
+    
+} 
+.links
+{
+    text-decoration: none;
+    color:white ;
+    font-size: 20px;
+    /* display: flex; 
+ justify-content: center; 
+ align-items: center; */
+}
+#check
+{
+    display: none;
+}
+label #btn,label #cancel
+{
+    position: absolute;
+    cursor: pointer;
+}
+label #btn
+{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    transition: all .5s ;
+}
+label #cancel
+{
+    z-index: 1111;
+    left: -380px;
+    top: 5px;
+    font-size: 30px;
+    color:white;
+    transition: all .5s ;
+}
+#check:checked ~ .nav
+{
+    left: 0;
+}
+#check:checked ~ label #btn
+{
+    pointer-events: none;
+}
+#check:checked ~ label #cancel
+{
+    left:380px;
+}
+
+
+
+
